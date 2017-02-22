@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>animationShow</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>	
+		<link rel="stylesheet" href="css/animate.css">
+		<style type="text/css">
+			body{margin:0 auto;width:930px;overflow-y: hidden;}
+            .look{margin:20px auto;padding:20px;width:200px;border:#333 2px solid;border-radius:10px;background-color:#B7D855;color:#fff;text-align:center;font-size:32px;}
+            dl dt{margin:4px 0;padding-left:10px;border-radius:5px;background-color:#bbb;font-size:18px;}
+            dl dd{padding-left:3px;}
+            button{margin:2px;padding:2px 5px;border:#000 1px solid;border-radius:5px;background-color:#ddd;}
+		</style>
+	</head>
+	<body>
+		<div class="animated infinite look">LOOK</div>
+        <dl>
+            <dt>attention_seekers/吸引视线</dt>
+            <dd><button>bounce</button><button>flash</button><button>pulse</button><button>rubberBand</button><button>shake</button><button>swing</button><button>tada</button><button>wobble</button></dd>
+        </dl>
+        <dl>
+            <dt>bouncing_entrances/弹现</dt>
+            <dd><button>bounceIn</button><button>bounceInDown</button><button>bounceInLeft</button><button>bounceInRight</button><button>bounceInUp</button></dd>
+        </dl>
+        <dl>
+            <dt>bouncing_exits/弹出</dt>
+            <dd><button>bounceOut</button><button>bounceOutDown</button><button>bounceOutLeft</button><button>bounceOutRight</button><button>bounceOutUp</button></dd>
+        </dl>
+        <dl>
+            <dt>fading_entrances/渐显</dt>
+            <dd><button>fadeIn</button><button>fadeInDown</button><button>fadeInDownBig</button><button>fadeInLeft</button><button>fadeInLeftBig</button><button>fadeInRight</button><button>fadeInRightBig</button><button>fadeInUp</button><button>fadeInUpBig</button></dd>
+        </dl>
+        <dl>
+            <dt>fading_exits/渐隐</dt>
+            <dd><button>fadeOut</button><button>fadeOutDown</button><button>fadeOutDownBig</button><button>fadeOutLeft</button><button>fadeOutLeftBig</button><button>fadeOutRight</button><button>fadeOutRightBig</button><button>fadeOutUp</button><button>fadeOutUpBig</button></dd>
+        </dl>
+        <dl>
+            <dt>flippers/翻转</dt>
+            <dd><button>flip</button><button>flipInX</button><button>flipInY</button><button>flipOutX</button><button>flipOutY</button></dd>
+        </dl>
+        <dl>
+            <dt>lightspeed</dt>
+            <dd><button>lightSpeedIn</button><button>lightSpeedOut</button></dd>
+        </dl>
+        <dl>
+            <dt>rotating_entrances/旋进</dt>
+            <dd><button>rotateIn</button><button>rotateInDownLeft</button><button>rotateInDownRight</button><button>rotateInUpLeft</button><button>rotateInUpRight</button></dd>
+        </dl>
+        <dl>
+            <dt>rotating_exits/旋出</dt>
+            <dd><button>rotateOut</button><button>rotateOutDownLeft</button><button>rotateOutDownRight</button><button>rotateOutUpLeft</button><button>rotateOutUpRight</button></dd>
+        </dl>
+        <dl>
+            <dt>sliders/滑动</dt>
+            <dd><button>slideInDown</button><button>slideInLeft</button><button>slideInRight</button><button>slideOutLeft</button><button>slideOutRight</button><button>slideOutUp</button></dd>
+        </dl>
+        <dl>
+            <dt>specials/特殊</dt>
+            <dd><button>hinge</button><button>rollIn</button><button>rollOut</button></dd>
+        </dl>
+        <script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(function() {
+                $("button").hover(function() {
+                    $(".look").toggleClass($(this).text());
+                })
+            });
+        </script>
+	</body>
+</html>
